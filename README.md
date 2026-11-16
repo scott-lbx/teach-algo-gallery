@@ -1,6 +1,6 @@
 # GH 演算法設計圖鑑
 
-<!-- hero --><p align="center"><img src="img/cases/F01-54.jpg" alt="teach-algo-gallery" width="860"></p>
+<!-- hero --><p align="center"><img src="docs/assets/hero.png" alt="teach-algo-gallery" width="860"></p>
 
 為教學用途建立的 Grasshopper 生成式演算法收集網頁，供學習建築參數化建模使用。最初為國立陽明交通大學建築研究所（NYCU GIA）115-1「演算法設計」課程整理，現以通用形式公開。
 
