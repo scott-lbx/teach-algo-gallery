@@ -12,7 +12,7 @@ export const meta = {
 
 /* ------------------------------------------------------------------
    gh-comp｜每個演算法一個 Grasshopper C# 元件檔（使用者 2026-09-29 的要求）
-   - 用法（Claude Code，在 gh_algo_design 內）：/gh-comp   args: {"run": "R20260929-1200"}
+   - 用法（Claude Code，在 teach-algo-gallery 內）：/gh-comp   args: {"run": "R20260929-1200"}
      run：台北時間的執行編號（腳本裡不能取得時間，由呼叫者提供）。
      同一個 run 可以重複執行來續跑：已通過審查的演算法（CSR_<id>.json 的 pass 為 true）會自動略過。
      ids：只做指定的演算法。redo：指定的演算法（或 "all"）即使已通過也重寫。max_fix：審查未通過時最多修幾輪（預設 2，最多 3）。
@@ -81,7 +81,7 @@ async function spawn(prompt, opts) {
 }
 
 const CTX = [
-  `工作目錄是 gh_algo_design 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
+  `工作目錄是 teach-algo-gallery 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
   `本次執行編號 RUN=${RUN}。全部文字用繁體中文（台灣用語）。Windows 終端機請先設 PYTHONIOENCODING=utf-8。`,
   `其他工作流程可能同時在這個資料夾工作：不要動你負責範圍以外的檔案，也不要執行 git stash／checkout／reset／pull 之類會改動工作目錄的指令。`,
 ].join('\n')

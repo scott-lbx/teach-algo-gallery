@@ -40,7 +40,7 @@ function spawn(prompt, opts) {
 }
 
 const CTX = [
-  `工作目錄是 gh_algo_design 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
+  `工作目錄是 teach-algo-gallery 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
   `本次執行編號 RUN=${RUN}。全部文字用繁體中文（台灣用語）。`,
 ].join('\n')
 const DIR = `_workflow/explore/${RUN}`

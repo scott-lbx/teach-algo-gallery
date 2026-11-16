@@ -8,7 +8,7 @@ Claude app 的雲端排程工作階段可能**沒有** Workflow 工具；這時�
 - **每次執行最多呼叫 30 次 Agent（含重試），同時最多 16 個**；在同一則訊息送出多個 Agent 呼叫就會並行。
 
 ## 共同前置
-1. 若工作目錄沒有 repo：`git clone https://github.com/ms-112-scott/gh_algo_design.git` 後 `cd gh_algo_design`。
+1. 若工作目錄沒有 repo：`git clone https://github.com/scott-lbx/teach-algo-gallery.git` 後 `cd teach-algo-gallery`。
 2. RUN 編號：台北時間 `RYYYYMMDD-HHMM`（例如 `python -c "import sys;sys.path.insert(0,'tools');import wf_common;print(wf_common.run_id())"`）。
 3. `pip install --break-system-packages opencc-python-reimplemented playwright pillow`（已安裝就略過）。
 

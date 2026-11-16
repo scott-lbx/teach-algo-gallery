@@ -6,7 +6,7 @@ export const meta = {
 
 /* ------------------------------------------------------------------
    gh-balance｜數位研究／藝術設計 1:1 ＋ 每張卡片都有自己的圖（使用者 2026-09-29 的要求）
-   - 用法（Claude Code 桌面版／CLI，在 gh_algo_design 內，先 git pull）：
+   - 用法（Claude Code 桌面版／CLI，在 teach-algo-gallery 內，先 git pull）：
        /gh-balance   args: {"run": "R20260929-0900"}
      run：台北時間的執行編號（腳本裡不能取得時間，由呼叫者提供）。
      同一個 run 可以重複執行來續跑：已完成的單元（輸出檔已存在）會自動略過。
@@ -90,7 +90,7 @@ async function spawn(prompt, opts, extra) {
 const all = (items, fn) => Promise.all((items || []).map(fn)).then(r => r.filter(Boolean))
 
 const CTX = [
-  `工作目錄是 gh_algo_design 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
+  `工作目錄是 teach-algo-gallery 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
   `本次執行編號 RUN=${RUN}。全部文字用繁體中文（台灣用語）。Windows 終端機請先設 PYTHONIOENCODING=utf-8。`,
   `這是在使用者自己的電腦上執行：任何網站的圖片都可以下載（用 tools/setimg.py）。`,
 ].join('\n')

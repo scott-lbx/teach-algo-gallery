@@ -6,7 +6,7 @@ export const meta = {
 
 /* ------------------------------------------------------------------
    gh-enrich｜既有演算法補充變形與案例
-   - 用法（Claude Code，在 gh_algo_design 內）：/gh-enrich，args 例如 {"run": "R20260929-0300"}
+   - 用法（Claude Code，在 teach-algo-gallery 內）：/gh-enrich，args 例如 {"run": "R20260929-0300"}
      run 是台北時間的執行編號（腳本裡不能取得時間，所以由呼叫者提供）。
      dry: true → 不推送到 GitHub（其餘照做，方便測試）。
      models：覆寫模型分配，例如 {"art": "opus"}；給 false 則不指定模型（全部沿用工作階段的模型）。
@@ -59,7 +59,7 @@ function spawn(prompt, opts) {
 }
 
 const CTX = [
-  `工作目錄是 gh_algo_design 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
+  `工作目錄是 teach-algo-gallery 儲存庫根目錄（若目前不在，先 cd 到含有 build.py 與 _workflow/ 的資料夾）。`,
   `本次執行編號 RUN=${RUN}。全部文字用繁體中文（台灣用語）。`,
 ].join('\n')
 
